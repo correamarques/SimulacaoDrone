@@ -1,0 +1,7 @@
+c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\TestProject\obj\Debug\TestProject.csprojResolveAssemblyReference.cache
+c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\TestProject\bin\Debug\TestProject.dll
+c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\TestProject\bin\Debug\TestProject.pdb
+c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\TestProject\bin\Debug\Business.dll
+c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\TestProject\bin\Debug\Business.pdb
+c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\TestProject\obj\Debug\TestProject.dll
+c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\TestProject\obj\Debug\TestProject.pdb
