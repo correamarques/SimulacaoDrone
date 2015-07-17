@@ -6,3 +6,11 @@ c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\Program\obj
 c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\Program\obj\Debug\ConsoleApp.pdb
 c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\Program\bin\Debug\Business.dll
 c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\Program\bin\Debug\Business.pdb
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Program\bin\Debug\ConsoleApp.exe.config
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Program\bin\Debug\ConsoleApp.exe
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Program\bin\Debug\ConsoleApp.pdb
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Program\bin\Debug\Business.dll
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Program\bin\Debug\Business.pdb
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Program\obj\Debug\Program.csprojResolveAssemblyReference.cache
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Program\obj\Debug\ConsoleApp.exe
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Program\obj\Debug\ConsoleApp.pdb

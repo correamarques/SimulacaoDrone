@@ -1,30 +1,103 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace Business
 {
-    public class Drone
-    {
+	public class Drone
+	{
 		public static string Evaluate(string input)
 		{
-			if (!IsAlphanumeric(input))
-				return "(999, 999)";
+			try
+			{
+				if (!IsAlphanumeric(input))
+					throw new Exception("(999, 999)");
 
-			//The input does not have X nor number
-			if (!HasX(input) && !HasNumber(input))
-				return SimpleSum(input);
+				//The input does not have X nor number
+				if (!HasX(input) && !HasNumber(input))
+					return SimpleSum(input);
 
-			if (HasX(input) && !HasNumber(input))
-				return SumWithX(input);
+				string retorno = string.Empty;
+				if (HasX(input) && !HasNumber(input))
+					return SumWithX(input);
 
+				if (HasX(input) && HasNumber(input))
+					return SumNumber(retorno);
 
-			return HasX(input).ToString();
+				return SimpleSum(retorno);
+			}
+			catch (Exception e)
+			{
+				return e.Message;
+			}
+		}
+
+		private static string SumNumber(string input)
+		{
+			try
+			{
+				string filteredInput = RemoveX(input);
+				filteredInput = RemoveNumbers(input);
+
+				return SimpleSum(filteredInput);
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+		}
+
+		static string RemoveX(string input)
+		{
+			try
+			{
+				if (input[0] == 'X')
+					throw new Exception("(999, 999)");
+
+				string filteredInput = string.Empty;
+				//Lê todos os characteres
+				for (int index = 0; index < input.Length; index++)
+				{// para facilitar o debug carrega o char atual
+					char c = input[index];
+
+					if (c == 'X' && filteredInput.Length > 0)
+						filteredInput = filteredInput.Remove(filteredInput.Length - 1, 1);
+					else if (c == 'X' && filteredInput.Length == 0)
+						throw new Exception("(999, 999)");
+					else
+						filteredInput += c;
+				}
+				return filteredInput;
+			}
+			catch (Exception)
+			{
+				throw;
+			}
+		}
+
+		static string RemoveNumbers(string input)
+		{// Agrupa os números
+			foreach (var item in Regex.Matches(input, @"\d{1,10}"))
+			{
+				Console.WriteLine(item);
+			}
+
+			throw new NotImplementedException();
 		}
 
 		private static string SumWithX(string input)
 		{
-			throw new System.NotImplementedException();
+			try
+			{
+				string filteredInput = RemoveX(input);
+
+				return SimpleSum(filteredInput);
+			}
+			catch (Exception)
+			{
+				throw;
+			}
 		}
 
 		/// <summary>
@@ -47,7 +120,7 @@ namespace Business
 			{
 				//Conta a quantidade de caracteres repetidos
 				int count = input.Count(i => i == item);
-				
+
 				// Sul ou Oeste deve ter posição negativa no gráfico
 				if (item == 'S' || item == 'O')
 					charCount.Add(count * -1);
@@ -71,5 +144,5 @@ namespace Business
 		{
 			return Regex.Matches(input, @"\d").Count > 0;
 		}
-    }
+	}
 }

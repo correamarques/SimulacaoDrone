@@ -35,15 +35,30 @@ namespace TestProject
 		#endregion
 
 		[TestMethod]
+		public void Input_XOOXXSOSXSOSOOXXSSS()
+		{// First char can't be X
+			Assert.AreEqual("(999, 999)", Drone.Evaluate("XOOXXSOSXSOSOOXXSSS"));
+		}
+		[TestMethod]
 		public void Input_OOXXSOSXSOSOOXXSSS()
 		{
-			Assert.AreEqual("(-2, -6)", Drone.Evaluate("OOXXSOSXSOSOOXXSSS"));
+			Assert.AreEqual("(-6, -2)", Drone.Evaluate("OOXXSOSXSOSOOXXSSS"));
+		}
+		[TestMethod]
+		public void Input_OOXXXSOSXSOSOOXXSSS()
+		{// Não pode haver maior quantidade de X do que a letra anterior
+			Assert.AreEqual("(999, 999)", Drone.Evaluate("OOXXXSOSXSOSOOXXSSS"));
 		}
 		[TestMethod]
 		public void Input_OOXXSOSXSOSOOXXSSSX()
 		{
-			Assert.AreEqual("(-2, -5)", Drone.Evaluate("OOXXSOSXSOSOOXXSSSX"));
+			Assert.AreEqual("(-5, -2)", Drone.Evaluate("OOXXSOSXSOSOOXXSSSX"));
 		}
 
+		[TestMethod]
+		public void Input_OOXXXSOSX2SOSOOXXSSS()
+		{// Não pode existir número após o X
+			Assert.AreEqual("(999, 999)", Drone.Evaluate("OOXXXSOSX2SOSOOXXSSS"));
+		}
 	}
 }

@@ -3,3 +3,8 @@ c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\Business\bi
 c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\Business\obj\Debug\Business.dll
 c:\users\fabian\documents\visual studio 2013\Projects\SimulacaoDrone\Business\obj\Debug\Business.pdb
 C:\Users\Fabian\documents\visual studio 2013\Projects\SimulacaoDrone\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Business\bin\Debug\Business.dll
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Business\bin\Debug\Business.pdb
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Business\obj\Debug\Business.dll
+C:\Users\Fabian\Documents\GitHub\SimulacaoDrone\Business\obj\Debug\Business.pdb
